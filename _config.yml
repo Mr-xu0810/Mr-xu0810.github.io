@@ -99,6 +99,7 @@ category_map:
 tag_map:
   随笔: notes
   web: web
+  配置: config
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta

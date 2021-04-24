@@ -12,6 +12,7 @@
 }
 .my-container .brand {
   width: 400px;
+  color: #fff !important;
 }
 .navbar-fixed {
   position: relative;

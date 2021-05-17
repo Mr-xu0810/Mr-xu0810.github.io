@@ -24,19 +24,19 @@ tag:
 
 #### 安装highlight.js
 
-  ```
+  ``` bash
     npm install highlight.js
   ```
 
 #### 配置高亮
 
   - main.js中引入样式文件
-    ```
+    ``` bash
       import 'highlight.js/styles/monokai-sublime.css'; // 代码高亮样式
     ```
 
   - 组件内配置高亮
-    ```
+    ``` bash
       // js
       import hljs from 'highlight.js';
 
@@ -67,7 +67,7 @@ tag:
     ```
 #### 配置图片上传
 
-  ```
+  ``` bash
     editorOption: {               //符文本编辑器的配置
       placeholder: '',
       theme: 'snow',
@@ -108,7 +108,7 @@ tag:
   ```
   可以创建一个隐藏的上传控件
 
-  ```
+  ``` bash
     <input type="file" id="#quill-upload" style="display: none" @change="uploadImg"/>  
   ```
 

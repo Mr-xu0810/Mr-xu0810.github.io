@@ -16,7 +16,7 @@ tags:
 
 ## 查看nginx配置
 
-  ```
+  ``` bash
     ps -ef|grep nginx可以查看到nginx的进程
     /usr/sbin/nginx -t 查找主配置文件
     cat /etc/nginx/nginx.conf 可用查找配置文件路径

@@ -281,7 +281,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    213
+                    267
                 </div>
                 
 
@@ -308,27 +308,32 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h2><pre><code>  git status  // 查看状态
-  git branch -a  // 查看本地所有分支
-  git checkout [分支名]   // 切换分支
-  git checkout -b [分支名]  // 创建并切换到分支
-  git ls-files  // 查看已经提交
-  git log  // 查看提交记录
-  git stash push   //将文件push到临时空间
-  git stash pop  // 将文件从临时空间拉取下来
-  git reset --hard [commit]  // 回退到指定提交
+                <h2 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h2><pre class=" language-bash"><code class="language-bash">  <span class="token function">git</span> init                    // 初始化git
+  <span class="token function">git</span> clone <span class="token operator">&lt;</span>url<span class="token operator">></span>             // 克隆仓库
+  <span class="token function">git</span> status                  // 查看状态
+  <span class="token function">git</span> branch -a               // 查看本地所有分支
+  <span class="token function">git</span> checkout <span class="token punctuation">[</span>分支名<span class="token punctuation">]</span>       // 切换分支
+  <span class="token function">git</span> checkout -b <span class="token punctuation">[</span>分支名<span class="token punctuation">]</span>    // 创建并切换到分支
+  <span class="token function">git</span> <span class="token function">ls</span> -files               // 查看已经提交
+  <span class="token function">git</span> log                     // 查看提交记录
+  <span class="token function">git</span> stash push              //将文件push到临时空间
+  <span class="token function">git</span> stash pop               // 将文件从临时空间拉取下来
+  <span class="token function">git</span> reset --hard <span class="token punctuation">[</span>commit<span class="token punctuation">]</span>   // 回退到指定提交同时清空暂缓区
+  <span class="token function">git</span> revert <span class="token operator">&lt;</span>commit<span class="token operator">></span>          // 撤销指定的提交
+  <span class="token function">git</span> rebase master           // 更新master到分支上
+  <span class="token function">git</span> fetch origin             // 更新远程仓库到本地
 </code></pre>
-<h2 id="本地新建文件并关联新仓库"><a href="#本地新建文件并关联新仓库" class="headerlink" title="本地新建文件并关联新仓库"></a>本地新建文件并关联新仓库</h2><pre><code>  git init
-  git add README.md
-  git commit -m "first commit"
-  git branch -M main // 设置本地分支名(看个人喜好)
-  git remote add origin https://github.com/Mr-xu0810/xxxx.git
-  git push -u origin main:master // 推送本地分支到远程
+<h2 id="本地新建文件并关联新仓库"><a href="#本地新建文件并关联新仓库" class="headerlink" title="本地新建文件并关联新仓库"></a>本地新建文件并关联新仓库</h2><pre class=" language-bash"><code class="language-bash">  <span class="token function">git</span> init
+  <span class="token function">git</span> add README.md
+  <span class="token function">git</span> commit -m <span class="token string">"first commit"</span>
+  <span class="token function">git</span> branch -M main // 设置本地分支名<span class="token punctuation">(</span>看个人喜好<span class="token punctuation">)</span>
+  <span class="token function">git</span> remote add origin https://github.com/Mr-xu0810/xxxx.git
+  <span class="token function">git</span> push -u origin main:master // 推送本地分支到远程
 </code></pre>
-<h2 id="已有仓库变更其他仓库"><a href="#已有仓库变更其他仓库" class="headerlink" title="已有仓库变更其他仓库"></a>已有仓库变更其他仓库</h2><pre><code>  git remote rm origin   // 删除就仓库地址
-  git remote add origin https://github.com/Mr-xu0810/turn.git
-  git branch -M main // 设置本地分支名
-  git push -u origin main:master
+<h2 id="已有仓库变更其他仓库"><a href="#已有仓库变更其他仓库" class="headerlink" title="已有仓库变更其他仓库"></a>已有仓库变更其他仓库</h2><pre class=" language-bash"><code class="language-bash">  <span class="token function">git</span> remote <span class="token function">rm</span> origin   // 删除旧仓库地址
+  <span class="token function">git</span> remote add origin https://github.com/Mr-xu0810/turn.git
+  <span class="token function">git</span> branch -M main // 设置本地分支名
+  <span class="token function">git</span> push -u origin main:master
 </code></pre>
 
                 
@@ -496,9 +501,9 @@
                 <a href="/2020/09/09/nvm-an-zhuang/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg" class="responsive-img" alt="hexo介绍">
+                        <img src="https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg" class="responsive-img" alt="nvm安装">
                         
-                        <span class="card-title">hexo介绍</span>
+                        <span class="card-title">nvm安装</span>
                     </div>
                 </a>
                 <div class="card-content article-content">

@@ -15,20 +15,25 @@ tags:
 ---
 
 ## 基本命令
-```
-  git status  // 查看状态
-  git branch -a  // 查看本地所有分支
-  git checkout [分支名]   // 切换分支
-  git checkout -b [分支名]  // 创建并切换到分支
-  git ls-files  // 查看已经提交
-  git log  // 查看提交记录
-  git stash push   //将文件push到临时空间
-  git stash pop  // 将文件从临时空间拉取下来
-  git reset --hard [commit]  // 回退到指定提交
+``` bash
+  git init                    // 初始化git
+  git clone <url>             // 克隆仓库
+  git status                  // 查看状态
+  git branch -a               // 查看本地所有分支
+  git checkout [分支名]       // 切换分支
+  git checkout -b [分支名]    // 创建并切换到分支
+  git ls -files               // 查看已经提交
+  git log                     // 查看提交记录
+  git stash push              //将文件push到临时空间
+  git stash pop               // 将文件从临时空间拉取下来
+  git reset --hard [commit]   // 回退到指定提交同时清空暂缓区
+  git revert <commit>          // 撤销指定的提交
+  git rebase master           // 更新master到分支上
+  git fetch origin             // 更新远程仓库到本地
 ```
 
 ## 本地新建文件并关联新仓库
-```
+``` bash
   git init
   git add README.md
   git commit -m "first commit"
@@ -38,8 +43,8 @@ tags:
 ```
 
 ## 已有仓库变更其他仓库
-```
-  git remote rm origin   // 删除就仓库地址
+``` bash
+  git remote rm origin   // 删除旧仓库地址
   git remote add origin https://github.com/Mr-xu0810/turn.git
   git branch -M main // 设置本地分支名
   git push -u origin main:master

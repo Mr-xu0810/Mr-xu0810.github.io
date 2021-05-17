@@ -1,5 +1,5 @@
 ---
-title: hexo介绍
+title: nvm安装
 date: 2020-09-09 19:44:39
 author: Mr-xu
 img: https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg
@@ -22,7 +22,7 @@ tags:
   >github地址： https://github.com/nvm-sh/nvm
 
   根据文档运行以下命令：
-  ```
+  ``` bash
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
     wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
@@ -43,7 +43,7 @@ tags:
     7. 运行 `source ~/.bashrc 或者 source ~/.zshrc ` 重新加载配置文件
 
 ## nvm基本命令
-  ```
+  ``` bash
     nvm list                    //查看nvm安装的node
     nvm list available          //显示可以安装的所有node.js的版本
     nvm use <version>           //切换到使用指定的nodejs版本

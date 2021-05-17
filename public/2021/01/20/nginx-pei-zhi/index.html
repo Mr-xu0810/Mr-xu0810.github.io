@@ -308,9 +308,9 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="查看nginx配置"><a href="#查看nginx配置" class="headerlink" title="查看nginx配置"></a>查看nginx配置</h2><pre><code>  ps -ef|grep nginx可以查看到nginx的进程
+                <h2 id="查看nginx配置"><a href="#查看nginx配置" class="headerlink" title="查看nginx配置"></a>查看nginx配置</h2><pre class=" language-bash"><code class="language-bash">  <span class="token function">ps</span> -ef<span class="token operator">|</span><span class="token function">grep</span> nginx可以查看到nginx的进程
   /usr/sbin/nginx -t 查找主配置文件
-  cat /etc/nginx/nginx.conf 可用查找配置文件路径
+  <span class="token function">cat</span> /etc/nginx/nginx.conf 可用查找配置文件路径
 </code></pre>
 <h2 id="nginx启动、重启、停止"><a href="#nginx启动、重启、停止" class="headerlink" title="nginx启动、重启、停止"></a>nginx启动、重启、停止</h2><pre><code>  cd /usr/local/nginx/sbin
   ./nginx  // 启动

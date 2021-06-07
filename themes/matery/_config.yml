@@ -133,13 +133,13 @@ indexbtn:
 # icon/button will not show up if you leave the corresponding socialLink empty
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
-  github:  # https://github.com/Mr-xu0810/Mr-xu0810.github.io
+  # github:  # https://github.com/Mr-xu0810/Mr-xu0810.github.io
   email: 18217650773@163.com
-  facebook: # https://www.facebook.com/xxx
-  twitter: # https://twitter.com/xxx
+  # facebook: # https://www.facebook.com/xxx
+  # twitter: # https://twitter.com/xxx
   qq: 2521186444
-  weibo: # https://weibo.com/xxx
-  zhihu: # https://www.zhihu.com/xxx
+  # weibo: # https://weibo.com/xxx
+  # zhihu: # https://www.zhihu.com/xxx
   rss: false # true、false
 
 # Whether to activate the Post TOC, and Configure which title types are supported by TOC support.

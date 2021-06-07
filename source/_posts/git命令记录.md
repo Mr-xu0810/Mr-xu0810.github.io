@@ -3,7 +3,7 @@ title: git命令
 date: 2020-09-14 10:44:39
 author: Mr-xu
 img: https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg
-top: true
+top: false
 cover: false
 coverImg: https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg
 toc: false

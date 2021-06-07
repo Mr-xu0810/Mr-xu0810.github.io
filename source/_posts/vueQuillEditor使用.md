@@ -3,7 +3,7 @@ title: vue-quill-editor配置使用
 date: 2021-01-07 19:24:09
 author: Mr-xu
 img: https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg
-top: true
+top: false
 cover: false
 coverImg: https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg
 toc: false

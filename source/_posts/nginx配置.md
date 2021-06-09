@@ -24,7 +24,7 @@ tags:
 
 ## nginx启动、重启、停止
 
-  ```
+  ``` bash
     cd /usr/local/nginx/sbin
     ./nginx  // 启动
     ./nginx -c /etc/nginx/nginx.conf 指定配置启动
@@ -37,7 +37,7 @@ tags:
 
 ## nginx配置代理
 
-  ```
+  ``` bash
     server: {
 
     ​	listen    8080;

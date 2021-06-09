@@ -15,7 +15,7 @@ tags:
 
 ### 生成jks：打包用的keystore
 
-```bash
+``` javascript
 keytool -genkey -v -keystore/Users/fei/keystore/test.jks -keyalg RSA -keysize 2048 -validity 10000 -alias test
 ```
 
@@ -23,7 +23,7 @@ keytool -genkey -v -keystore/Users/fei/keystore/test.jks -keyalg RSA -keysize 20
 
 ### 查看sha1:
 
-```bash
+``` javascript
 keytool -v -list -keystore 【jks文件路径（/Users/fei/keystore/test.jks）】 
 输入密码后可获取sha1码
 ```
@@ -33,7 +33,7 @@ keytool -v -list -keystore 【jks文件路径（/Users/fei/keystore/test.jks）�
 
 内容如下：
 
-```bash
+``` javascript
 storePassword=123456
 keyPassword=123456
 keyAlias=test
@@ -44,7 +44,7 @@ storeFile=/Users/fei/keystore/test.jks
 
 #### 在android之前添加：
 
-```bash
+``` javascript
 def keyProperties=new Properties()
 def keyPropertiesFile=rootProject.file("key.properties")
 if(keyPropertiesFile.exists()) {
@@ -54,7 +54,7 @@ if(keyPropertiesFile.exists()) {
 
 #### 在buildTypes  上面添加 signingConfigs:
 
-```bash
+``` javascript
 signingConfigs{
     release{
         keyAlias keyProperties['keyAlias']
@@ -67,7 +67,7 @@ signingConfigs{
 
 #### 调整buildTypes：
 
-```bash
+``` javascript
 buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
@@ -88,7 +88,7 @@ buildTypes {
 
 ### 配置完成，运行命令打包：
 
-```bash
+``` bash
 flutter build apk
 ```
 

@@ -17,7 +17,7 @@ tags:
 
 1.安装vue cli:   
 
-```bash
+``` bash
 npm install -g @vue/cli
 # OR
 yarn global add @vue/cli
@@ -25,13 +25,13 @@ yarn global add @vue/cli
 
 2.创建项目：
 
-```bash
+``` bash
 vue create hello-world
 ```
 
 打包项目：
 
-```bash
+``` bash
 npm run build
 ```
 
@@ -39,7 +39,7 @@ npm run build
 
 nginx.conf文件编写
 
-```bash
+``` bash
 server {
     listen       80;
     server_name  localhost;
@@ -72,7 +72,7 @@ server {
 
 ​	项目根目录或其他路径下创建Dockerfile文件，编写内容：
 
-```bash
+``` bash
 FROM nginx     # 拉去nginx镜像
 COPY ./dist /var/www/html			# 命令的意思是将项目根目录下dist文件夹下的所有文件复制到镜像中 /var/www/html/ 目录下
 COPY ./default.conf /etc/nginx/conf.d/  # 命令的意思是将当前目录下的default.conf 复制到 etc/nginx/conf.d/下，用本地的 default.conf 配置来替换nginx镜像里的默认配置
@@ -81,15 +81,15 @@ EXPOSE 80
 
 2.构建镜像
 
-```bash
-docker build -t 镜像名 .    // .表示的是 基于当前目录下的Dockerfile
+``` bash
+docker build -t 镜像名 .    # .表示的是 基于当前目录下的Dockerfile
 ```
 
 3.运行容器
 
-```bash
+``` bash
 docker run -p 3000:80 -d --name vueApp 镜像  
-// -p 3000:80 将宿主的3000端口映射到容器的80端口
-// -d 表示后台运行
-// vueApp 设置的容器名称
+# -p 3000:80 将宿主的3000端口映射到容器的80端口
+# -d 表示后台运行
+# vueApp 设置的容器名称
 ```

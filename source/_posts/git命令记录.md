@@ -15,7 +15,7 @@ tags:
 ---
 
 ## 基本命令
-``` bash
+``` javascript
   git init                    // 初始化git
   git clone <url>             // 克隆仓库
   git status                  // 查看状态
@@ -33,7 +33,7 @@ tags:
 ```
 
 ## 本地新建文件并关联新仓库
-``` bash
+``` javascript
   git init
   git add README.md
   git commit -m "first commit"
@@ -43,9 +43,9 @@ tags:
 ```
 
 ## 已有仓库变更其他仓库
-``` bash
+``` javascript
   git remote rm origin   // 删除旧仓库地址
-  git remote add origin https://github.com/Mr-xu0810/turn.git
-  git branch -M main // 设置本地分支名
-  git push -u origin main:master
+  git remote add origin 'https://github.com/Mr-xu0810/turn.git'
+  git branch -M main // 设置本地分支名 可跳过
+  git push -u origin main:master /  git push -u origin master
 ```

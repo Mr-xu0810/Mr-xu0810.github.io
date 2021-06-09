@@ -16,7 +16,7 @@ tags:
 
 
 ## 基本命令
-```
+``` bash
   docker ps -a  查看docker容器
 
   docker start 【containerId】运行容器

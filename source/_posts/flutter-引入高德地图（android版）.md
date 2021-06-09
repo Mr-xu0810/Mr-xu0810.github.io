@@ -32,20 +32,20 @@ tags:
 ### 配置：
 在项目的android/app文件下找到build.gradle， 在文件中找到sourceSets 标签，增加一项配置
 
-  ```bash
+  ``` javascript
   main{
     jniLibs.srcDirs=['libs'];
   }
   ```
 在defaultConfig中加入：
-  ```bash
+  ``` javascript
   multiDexEnabled true
   manifestPlaceholders = [
       AMAP_KEY : "d6137d3d7c9aedfc4078db0b630613d4", /// 高德地图key
   ]
   ```
 在dependencies中添加高德地图sdk
-  ```bash
+  ``` javascript
   implementation fileTree(include: ['*.jar'], dir: 'libs')
   ```
 
@@ -55,7 +55,7 @@ tags:
 
 #### 配置权限： application下面加入
 
-  ```bash
+  ``` javascript
   <!--允许程序打开网络套接字-->
   <uses-permission android:name="android.permission.INTERNET" />  
   <!--允许程序设置内置sd卡的写权限-->
@@ -74,19 +74,19 @@ tags:
 
 1. 在Flutter工程的pubspec.yaml里的dependencies添加如下代码引入高德地图Flutter插件
 
-  ```bash
+  ``` javascript
   dependencies:
     amap_flutter_map: ^1.0.0
   ```
 
 2.获取插件
-  ```bash
+  ``` bash
     flutter pub get
   ```
 
 3.需要使用地图的dart文件中引入
 
-  ```bash
+  ``` javascript
   import 'package:amap_flutter_base/amap_flutter_base.dart'; // 基础包
   import 'package:amap_flutter_map/amap_flutter_map.dart';  // 插件包
 

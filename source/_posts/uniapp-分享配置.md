@@ -21,7 +21,7 @@ tags:
 
    定义share.js：
 
-    ```bash
+    ``` javascript
        export const shareMixins = {
            data () {
                return {
@@ -86,7 +86,7 @@ tags:
 
     第二步在需要的页面中引入并添加mixins
 
-   ```bash
+   ``` javascript
    export default {
    
    	data(){

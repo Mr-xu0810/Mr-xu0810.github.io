@@ -281,7 +281,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    275
+                    444
                 </div>
                 
 
@@ -323,18 +323,8 @@
   git rebase master           <span class="token comment" spellcheck="true">// 更新master到分支上</span>
   git fetch origin             <span class="token comment" spellcheck="true">// 更新远程仓库到本地</span>
 </code></pre>
-<h2 id="本地新建文件并关联新仓库"><a href="#本地新建文件并关联新仓库" class="headerlink" title="本地新建文件并关联新仓库"></a>本地新建文件并关联新仓库</h2><pre class=" language-javascript"><code class="language-javascript">  git init
-  git add README<span class="token punctuation">.</span>md
-  git commit <span class="token operator">-</span>m <span class="token string">"first commit"</span>
-  git branch <span class="token operator">-</span>M main <span class="token comment" spellcheck="true">// 设置本地分支名(看个人喜好)</span>
-  git remote add origin https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>github<span class="token punctuation">.</span>com<span class="token operator">/</span>Mr<span class="token operator">-</span>xu0810<span class="token operator">/</span>xxxx<span class="token punctuation">.</span>git
-  git push <span class="token operator">-</span>u origin main<span class="token punctuation">:</span>master <span class="token comment" spellcheck="true">// 推送本地分支到远程</span>
-</code></pre>
-<h2 id="已有仓库变更其他仓库"><a href="#已有仓库变更其他仓库" class="headerlink" title="已有仓库变更其他仓库"></a>已有仓库变更其他仓库</h2><pre class=" language-javascript"><code class="language-javascript">  git remote rm origin   <span class="token comment" spellcheck="true">// 删除旧仓库地址</span>
-  git remote add origin <span class="token string">'https://github.com/Mr-xu0810/turn.git'</span>
-  git branch <span class="token operator">-</span>M main <span class="token comment" spellcheck="true">// 设置本地分支名 可跳过</span>
-  git push <span class="token operator">-</span>u origin main<span class="token punctuation">:</span>master <span class="token operator">/</span>  git push <span class="token operator">-</span>u origin master
-</code></pre>
+<h6 id="一：上传一个本地的独立分支"><a href="#一：上传一个本地的独立分支" class="headerlink" title="一：上传一个本地的独立分支"></a>一：上传一个本地的独立分支</h6><p>1、git init （初始化环境，生成.git环境）<br>2、git add . （讲文件添加暂存区）<br>3、git commit -m “描述信息” （提交暂存区文件）<br>4、git branch 分支名称 （创建本地分支）<br>5、git checkout 分支名称 （切换到本地分支）<br>6、git remote add origin 远程仓库地址 （关联远程仓库）<br>7、git push origin 分支名 （推送本地分支到远程仓库）</p>
+<h6 id="二：上传本地仓库到远程仓库指定分支"><a href="#二：上传本地仓库到远程仓库指定分支" class="headerlink" title="二：上传本地仓库到远程仓库指定分支"></a>二：上传本地仓库到远程仓库指定分支</h6><p>1、创建本地文件夹，并在次文件夹处打开Git Bash<br>2、git init （初始化环境，生成.git环境）<br>3、git remote add origin 远程仓库地址 （连接远程仓库）<br>4、git pull origin 远程仓库分支名 （拉取远程仓库指定分支）<br>5、git checkout –track origin/远程仓库分支名 （追踪远程仓库分支，与本地仓库建立联系）<br>6、在本地仓库中添加文件或修改文件<br>7、git add . (讲文件添加暂存区)<br>8、git commit -m ‘描述信息’ （提交暂存区文件）<br>9、git push origin 远程仓库分支名 (推送到远程仓库指定分支)</p>
 
                 
             </div>
@@ -645,7 +635,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">5.4k</span>&nbsp;字
+                class="white-color">6.4k</span>&nbsp;字
             
             
             

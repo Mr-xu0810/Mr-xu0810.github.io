@@ -6,9 +6,10 @@ img: /images/3.jpg
 top: false
 cover: false
 summary: 自定义组件时能够全局使用，且只需注册一次
-categories: 自定义
+categories: vue
 tags:
   - vue
+  - 自定义组件
 ---
 
 # VUE注册全局Message

@@ -32,20 +32,24 @@ tags:
   git fetch origin             // 更新远程仓库到本地
 ```
 
-## 本地新建文件并关联新仓库
-``` javascript
-  git init
-  git add README.md
-  git commit -m "first commit"
-  git branch -M main // 设置本地分支名(看个人喜好)
-  git remote add origin https://github.com/Mr-xu0810/xxxx.git
-  git push -u origin main:master // 推送本地分支到远程
-```
+###### 一：上传一个本地的独立分支
 
-## 已有仓库变更其他仓库
-``` javascript
-  git remote rm origin   // 删除旧仓库地址
-  git remote add origin 'https://github.com/Mr-xu0810/turn.git'
-  git branch -M main // 设置本地分支名 可跳过
-  git push -u origin main:master /  git push -u origin master
-```
+1、git init （初始化环境，生成.git环境）
+2、git add . （讲文件添加暂存区）
+3、git commit -m “描述信息” （提交暂存区文件）
+4、git branch 分支名称 （创建本地分支）
+5、git checkout 分支名称 （切换到本地分支）
+6、git remote add origin 远程仓库地址 （关联远程仓库）
+7、git push origin 分支名 （推送本地分支到远程仓库）
+
+###### 二：上传本地仓库到远程仓库指定分支
+
+1、创建本地文件夹，并在次文件夹处打开Git Bash
+2、git init （初始化环境，生成.git环境）
+3、git remote add origin 远程仓库地址 （连接远程仓库）
+4、git pull origin 远程仓库分支名 （拉取远程仓库指定分支）
+5、git checkout --track origin/远程仓库分支名 （追踪远程仓库分支，与本地仓库建立联系）
+6、在本地仓库中添加文件或修改文件
+7、git add . (讲文件添加暂存区)
+8、git commit -m ‘描述信息’ （提交暂存区文件）
+9、git push origin 远程仓库分支名 (推送到远程仓库指定分支)

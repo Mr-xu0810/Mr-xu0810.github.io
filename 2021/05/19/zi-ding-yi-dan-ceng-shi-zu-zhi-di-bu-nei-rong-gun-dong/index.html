@@ -406,22 +406,19 @@
 <p>在进行自定义弹层时，pc或者移动端在弹层上进行滚动或滑动时，底部内容超过一屏的时候，也会进行滚动，体验不佳</p>
 </blockquote>
 <h3 id="处理方式"><a href="#处理方式" class="headerlink" title="处理方式"></a>处理方式</h3><ul>
-<li><p>移动端<br>自定义弹层时，阻止弹层下内容滚动,在蒙版及弹层最外层上进行触摸事件的处理</p>
-<pre class=" language-javascript"><code class="language-javascript">@touchmove<span class="token punctuation">.</span>stop<span class="token punctuation">.</span>prevent<span class="token operator">=</span><span class="token string">"moveHandle"</span>
+<li>移动端<br>自定义弹层时，阻止弹层下内容滚动,在蒙版及弹层最外层上进行触摸事件的处理<pre class=" language-javascript"><code class="language-javascript">@touchmove<span class="token punctuation">.</span>stop<span class="token punctuation">.</span>prevent<span class="token operator">=</span><span class="token string">"moveHandle"</span>
 
 <span class="token function">moveHandle</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token keyword">return</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
 </li>
-<li><p>pc端<br>在web端处理，则需要在弹层开启时，设置body属性即可,限制内容只展示一个屏幕，这样在鼠标进行滚动时就不会引起底部内容的滚动</p>
-<pre class=" language-javascript"><code class="language-javascript">  <span class="token keyword">let</span> dom <span class="token operator">=</span> document<span class="token punctuation">.</span>body <span class="token operator">||</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">;</span>
+<li>pc端<br>在web端处理，则需要在弹层开启时，设置body属性即可,限制内容只展示一个屏幕，这样在鼠标进行滚动时就不会引起底部内容的滚动<pre class=" language-javascript"><code class="language-javascript">  <span class="token keyword">let</span> dom <span class="token operator">=</span> document<span class="token punctuation">.</span>body <span class="token operator">||</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">;</span>
   dom<span class="token punctuation">.</span>style<span class="token punctuation">.</span>height <span class="token operator">=</span> <span class="token string">'100vh'</span><span class="token punctuation">;</span> 
   dom<span class="token punctuation">.</span>style<span class="token punctuation">.</span>overflow <span class="token operator">=</span> <span class="token string">'hidden'</span><span class="token punctuation">;</span>
 </code></pre>
 </li>
-<li><p>兼容处理<br>记录当前的高度（var scrollTop = document.body.scrollTop || document.documentElement.scrollTop），内容设置position：fixed ，并移动到对应位置 (设置 top = scrollTop)，关闭弹层时取消position的设置</p>
-</li>
+<li>兼容处理<br>记录当前的高度（var scrollTop = document.body.scrollTop || document.documentElement.scrollTop），内容设置position：fixed ，并移动到对应位置 (设置 top = scrollTop)，关闭弹层时取消position的设置</li>
 </ul>
 
                 
@@ -538,30 +535,30 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/05/21/jian-rong-chu-li/">
+                <a href="/2021/05/19/vue3-ming-ling-shi-zu-jian/">
                     <div class="card-image">
                         
-                        <img src="/images/4.jpg" class="responsive-img" alt="兼容处理">
+                        <img src="/images/5.jpg" class="responsive-img" alt="自定义命令式组件">
                         
-                        <span class="card-title">兼容处理</span>
+                        <span class="card-title">自定义命令式组件</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            记录遇到的兼容问题
+                            自定义命令式组件并挂载
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-05-21
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-05-19
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" class="post-category">
-                                    移动端
+                            <a href="/categories/vue3/" class="post-category">
+                                    vue3
                                 </a>
                             
                             
@@ -571,8 +568,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%85%BC%E5%AE%B9/">
-                        <span class="chip bg-color">兼容</span>
+                    <a href="/tags/vue3/">
+                        <span class="chip bg-color">vue3</span>
                     </a>
                     
                 </div>
@@ -814,7 +811,7 @@
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2020-2021</span>
+                <span id="year">2020-2022</span>
             
             <span id="year">2020</span>
             <!-- <a href="/about" target="_blank">Mr-xu</a>
@@ -823,7 +820,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">6.4k</span>&nbsp;字
+                class="white-color">6.9k</span>&nbsp;字
             
             
             
